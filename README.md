@@ -32,19 +32,26 @@ git clone https://github.com/AngeloEsam/Task-Nest-React.git
 
 ```
 
-### 2️⃣ Install Dependencies
-```sh
+2️⃣ Run the Frontend
+sh
+cd frontend
 npm install
-
-```
-
-### 3️⃣ Run the Development Server
-```sh
 npm run dev
+The React app will run on http://localhost:5173 (default Vite port).
 
-```
+3️⃣ Run the Backend
+sh
+cd backend
+npm install
+npm start
+The NestJS server will start on http://localhost:3000.
 
-Make sure the backend is running on **http://localhost:3000**.
+📌 API Endpoints (Backend)
+Method	Endpoint	Description
+GET	/posts	Fetch all blog posts
+GET	/posts/:id	Get a single post
+POST	/posts	Create a new post
+
 
 ## 🔥 Usage
 - **Create a post**: Fill in the title, author, and content.
